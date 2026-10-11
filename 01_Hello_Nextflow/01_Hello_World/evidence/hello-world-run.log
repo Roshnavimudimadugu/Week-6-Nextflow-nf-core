@@ -1,0 +1,13 @@
+[33mNextflow 26.04.7 is available - Please consider updating your version to it(B[m
+
+ N E X T F L O W   ~  version 26.04.4
+
+Launching `hello-world.nf` [evil_curran] revision: dc38bebf45
+
+[-        ] sayHello -
+
+[-        ] sayHello | 0 of 1
+
+executor >  local (1)
+[06/86ad09] sayHello | 1 of 1 ✔
+
