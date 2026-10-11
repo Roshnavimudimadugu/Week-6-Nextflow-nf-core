@@ -1,0 +1,49 @@
+[33mNextflow 26.04.7 is available - Please consider updating your version to it(B[m
+
+ N E X T F L O W   ~  version 26.04.4
+
+Launching `hello-modules.nf` [nice_planck] revision: 765eeefdd2
+
+[-        ] sayHello         -
+[-        ] convertToUpper   -
+[-        ] collectGreetings -
+
+executor >  local (1)
+[44/9feb5a] sayHello (1)     | 0 of 3
+[-        ] convertToUpper   -
+[-        ] collectGreetings -
+
+executor >  local (4)
+[25/bbae53] sayHello (3)       | 3 of 3 ✔
+[1d/e5178a] convertToUpper (2) | 0 of 3
+[-        ] collectGreetings   -
+
+executor >  local (7)
+[25/bbae53] sayHello (3)       | 3 of 3 ✔
+[85/57fe98] convertToUpper (3) | 3 of 3 ✔
+[7f/e30eb7] collectGreetings   | 0 of 1
+
+executor >  local (7)
+[25/bbae53] sayHello (3)       | 3 of 3 ✔
+[85/57fe98] convertToUpper (3) | 3 of 3 ✔
+[7f/e30eb7] collectGreetings   | 1 of 1 ✔
+
+Outputs:
+
+  /workspaces/training/hello-nextflow/results
+
+  first_output:
+    - hello_modules/Hello-output.txt
+    - hello_modules/Bonjour-output.txt
+    - hello_modules/Hola-output.txt
+
+  uppercased:
+    - hello_modules/UPPER-Bonjour-output.txt
+    - hello_modules/UPPER-Hello-output.txt
+    - hello_modules/UPPER-Hola-output.txt
+
+  collected: hello_modules/COLLECTED-batch-output.txt
+
+  batch_report: hello_modules/batch-report.txt
+
+

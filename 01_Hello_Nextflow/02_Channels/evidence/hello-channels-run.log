@@ -1,0 +1,24 @@
+[33mNextflow 26.04.7 is available - Please consider updating your version to it(B[m
+
+ N E X T F L O W   ~  version 26.04.4
+
+Launching `hello-channels.nf` [chaotic_thompson] revision: 6bb40475d2
+
+[-        ] sayHello -
+
+executor >  local (1)
+[0f/0bd755] sayHello | 0 of 1
+
+executor >  local (1)
+[0f/0bd755] sayHello | 1 of 1 ✔
+
+executor >  local (1)
+[0f/0bd755] sayHello | 1 of 1 ✔
+
+Outputs:
+
+  /workspaces/training/hello-nextflow/results
+
+  first_output: hello_channels/output.txt
+
+

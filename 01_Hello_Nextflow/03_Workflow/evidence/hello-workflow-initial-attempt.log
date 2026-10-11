@@ -1,0 +1,9 @@
+[33mNextflow 26.04.7 is available - Please consider updating your version to it(B[m
+
+ N E X T F L O W   ~  version 26.04.4
+
+Launching `hello-workflow.nf` [mighty_hilbert] revision: 4d4053520d
+
+Parameter `batch` was specified on the command line or params file but is not declared in the script or config
+
+

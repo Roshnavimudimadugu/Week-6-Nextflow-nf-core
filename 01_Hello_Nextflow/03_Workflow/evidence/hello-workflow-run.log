@@ -1,0 +1,26 @@
+[33mNextflow 26.04.7 is available - Please consider updating your version to it(B[m
+
+ N E X T F L O W   ~  version 26.04.4
+
+Launching `hello-workflow.nf` [deadly_mclean] revision: 4d4053520d
+
+[-        ] sayHello -
+
+[-        ] sayHello | 0 of 3
+
+executor >  local (3)
+[13/2be8e8] sayHello (3) | 0 of 3
+
+executor >  local (3)
+[79/114c13] sayHello (1) | 3 of 3 ✔
+
+Outputs:
+
+  /workspaces/training/hello-nextflow/results
+
+  first_output:
+    - hello_workflow/Hello-output.txt
+    - hello_workflow/Bonjour-output.txt
+    - hello_workflow/Hola-output.txt
+
+

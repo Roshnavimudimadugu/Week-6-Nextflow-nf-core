@@ -1,0 +1,68 @@
+[33mNextflow 26.04.7 is available - Please consider updating your version to it(B[m
+
+ N E X T F L O W   ~  version 26.04.4
+
+Launching `hello-config.nf` [awesome_allen] revision: 46a6763141
+
+[-        ] sayHello         -
+[-        ] convertToUpper   -
+[-        ] collectGreetings -
+[-        ] cowpy            -
+
+executor >  local (3)
+[94/4c8116] sayHello (3)     | 0 of 3
+[-        ] convertToUpper   -
+[-        ] collectGreetings -
+[-        ] cowpy            -
+
+executor >  local (6)
+[f2/b7c1e5] sayHello (2)       | 3 of 3 ✔
+[11/28b3a9] convertToUpper (2) | 2 of 3
+[-        ] collectGreetings   -
+[-        ] cowpy              -
+
+executor >  local (8)
+[f2/b7c1e5] sayHello (2)       | 3 of 3 ✔
+[ca/d16346] convertToUpper (3) | 3 of 3 ✔
+[af/fe3488] collectGreetings   | 1 of 1 ✔
+[4c/48016e] cowpy              | 0 of 1
+
+executor >  local (8)
+[f2/b7c1e5] sayHello (2)       | 3 of 3 ✔
+[ca/d16346] convertToUpper (3) | 3 of 3 ✔
+[af/fe3488] collectGreetings   | 1 of 1 ✔
+[4c/48016e] cowpy              | 0 of 1
+
+executor >  local (8)
+[f2/b7c1e5] sayHello (2)       | 3 of 3 ✔
+[ca/d16346] convertToUpper (3) | 3 of 3 ✔
+[af/fe3488] collectGreetings   | 1 of 1 ✔
+[4c/48016e] cowpy              | 1 of 1 ✔
+
+executor >  local (8)
+[f2/b7c1e5] sayHello (2)       | 3 of 3 ✔
+[ca/d16346] convertToUpper (3) | 3 of 3 ✔
+[af/fe3488] collectGreetings   | 1 of 1 ✔
+[4c/48016e] cowpy              | 1 of 1 ✔
+
+Outputs:
+
+  /workspaces/training/hello-nextflow/results
+
+  first_output:
+    - hello_config/intermediates/Bonjour-output.txt
+    - hello_config/intermediates/Hello-output.txt
+    - hello_config/intermediates/Hola-output.txt
+
+  uppercased:
+    - hello_config/intermediates/UPPER-Bonjour-output.txt
+    - hello_config/intermediates/UPPER-Hello-output.txt
+    - hello_config/intermediates/UPPER-Hola-output.txt
+
+  collected: hello_config/intermediates/COLLECTED-batch-output.txt
+
+  batch_report: hello_config/batch-report.txt
+
+  cowpy_art: hello_config/cowpy-COLLECTED-batch-output.txt
+
+

@@ -1,0 +1,49 @@
+[33mNextflow 26.04.7 is available - Please consider updating your version to it(B[m
+
+ N E X T F L O W   ~  version 26.04.4
+
+Launching `hello-containers.nf` [lethal_perlman] revision: fdbf988e91
+
+[-        ] sayHello         -
+[-        ] convertToUpper   -
+[-        ] collectGreetings -
+
+executor >  local (2)
+[5f/400e22] sayHello (1)     | 0 of 3
+[-        ] convertToUpper   -
+[-        ] collectGreetings -
+
+executor >  local (3)
+[2c/552c4e] sayHello (3)     | 3 of 3 ✔
+[-        ] convertToUpper   | 0 of 2
+[-        ] collectGreetings -
+
+executor >  local (7)
+[2c/552c4e] sayHello (3)       | 3 of 3 ✔
+[4c/a241e1] convertToUpper (3) | 3 of 3 ✔
+[d4/f5cb9e] collectGreetings   | 0 of 1
+
+executor >  local (7)
+[2c/552c4e] sayHello (3)       | 3 of 3 ✔
+[4c/a241e1] convertToUpper (3) | 3 of 3 ✔
+[d4/f5cb9e] collectGreetings   | 1 of 1 ✔
+
+Outputs:
+
+  /workspaces/training/hello-nextflow/results
+
+  first_output:
+    - hello_containers/Bonjour-output.txt
+    - hello_containers/Hola-output.txt
+    - hello_containers/Hello-output.txt
+
+  uppercased:
+    - hello_containers/UPPER-Hola-output.txt
+    - hello_containers/UPPER-Bonjour-output.txt
+    - hello_containers/UPPER-Hello-output.txt
+
+  collected: hello_containers/COLLECTED-batch-output.txt
+
+  batch_report: hello_containers/batch-report.txt
+
+

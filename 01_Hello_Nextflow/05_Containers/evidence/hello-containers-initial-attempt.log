@@ -1,0 +1,59 @@
+[33mNextflow 26.04.7 is available - Please consider updating your version to it(B[m
+
+ N E X T F L O W   ~  version 26.04.4
+
+Launching `hello-containers.nf` [gloomy_davinci] revision: fdbf988e91
+
+
+Error hello-containers.nf:4:1: Invalid include source: '/workspaces/training/hello-nextflow/modules/sayHello.nf'
+│   4 | include { sayHello } from './modules/sayHello.nf'
+╰     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error hello-containers.nf:5:1: Invalid include source: '/workspaces/training/hello-nextflow/modules/convertToUpper.nf'
+│   5 | include { convertToUpper } from './modules/convertToUpper.nf'
+╰     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error hello-containers.nf:6:1: Invalid include source: '/workspaces/training/hello-nextflow/modules/collectGreetings.nf'
+│   6 | include { collectGreetings } from './modules/collectGreetings.nf'
+╰     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error hello-containers.nf:24:5: `sayHello` is not defined
+│  24 |     sayHello(greeting_ch)
+╰     |     ^^^^^^^^
+
+Error hello-containers.nf:26:5: `convertToUpper` is not defined
+│  26 |     convertToUpper(sayHello.out)
+╰     |     ^^^^^^^^^^^^^^
+
+Error hello-containers.nf:28:5: `collectGreetings` is not defined
+│  28 |     collectGreetings(convertToUpper.out.collect(), params.batch)
+╰     |     ^^^^^^^^^^^^^^^^
+
+Error hello-containers.nf:26:20: `sayHello` is not defined
+│  26 |     convertToUpper(sayHello.out)
+╰     |                    ^^^^^^^^
+
+Error hello-containers.nf:28:22: `convertToUpper` is not defined
+│  28 |     collectGreetings(convertToUpper.out.collect(), params.batch)
+╰     |                      ^^^^^^^^^^^^^^
+
+Error hello-containers.nf:31:20: `sayHello` is not defined
+│  31 |     first_output = sayHello.out
+╰     |                    ^^^^^^^^
+
+Error hello-containers.nf:32:18: `convertToUpper` is not defined
+│  32 |     uppercased = convertToUpper.out
+╰     |                  ^^^^^^^^^^^^^^
+
+Error hello-containers.nf:33:17: `collectGreetings` is not defined
+│  33 |     collected = collectGreetings.out.outfile
+╰     |                 ^^^^^^^^^^^^^^^^
+
+Error hello-containers.nf:34:20: `collectGreetings` is not defined
+│  34 |     batch_report = collectGreetings.out.report
+╰     |                    ^^^^^^^^^^^^^^^^
+
+
+ERROR ~ Script compilation failed
+
+ -- Check '.nextflow.log' file for details
