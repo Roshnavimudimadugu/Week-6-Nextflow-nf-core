@@ -22,7 +22,6 @@ The Nextflow run completed successfully. The `sayHello` process finished with 1 
 
 ## Evidence
 - `evidence/hello-world-run.log` — captured execution log.
-- `evidence/hello-world-success.png` — screenshot of successful execution.
 
 ## Key learning
 A Nextflow process defines a computational task, and Nextflow manages its execution and reports its status.
