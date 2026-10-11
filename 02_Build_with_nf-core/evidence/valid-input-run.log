@@ -1,0 +1,103 @@
+[33mNextflow 26.04.7 is available - Please consider updating your version to it(B[m
+
+ N E X T F L O W   ~  version 26.04.4
+
+Launching `./main.nf` [jolly_lattes] revision: d6bbba9521
+
+WARN: Unrecognized config option 'validation.defaultIgnoreParams'
+WARN: Unrecognized config option 'validation.monochromeLogs'
+Input/output options
+  input                     : /workspaces/Week-6-Nextflow-nf-core/02_Build_with_nf-core/core-hello/assets/greetings.csv
+  batch                     : test
+  outdir                    : core-hello-results
+
+Institutional config options
+  config_profile_name       : Test profile
+  config_profile_description: Minimal test dataset to check pipeline function
+
+Generic options
+  trace_report_suffix       : 2026-10-11_04-28-54
+
+Core Nextflow options
+  runName                   : jolly_lattes
+  containerEngine           : docker
+  launchDir                 : /workspaces/Week-6-Nextflow-nf-core/02_Build_with_nf-core/core-hello
+  workDir                   : /workspaces/Week-6-Nextflow-nf-core/02_Build_with_nf-core/core-hello/work
+  projectDir                : /workspaces/Week-6-Nextflow-nf-core/02_Build_with_nf-core/core-hello
+  userName                  : root
+  profile                   : test,docker
+  configFiles               : /workspaces/Week-6-Nextflow-nf-core/02_Build_with_nf-core/core-hello/nextflow.config
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+------------------------------------------------------
+WARN: The following invalid input values have been detected:
+
+* --character: tux
+
+
+[-        ] CORE_HELLO:HELLO:sayHello         -
+[-        ] CORE_HELLO:HELLO:convertToUpper   -
+[-        ] CORE_HELLO:HELLO:FIND_CONCATENATE -
+[-        ] CORE_HELLO:HELLO:COWPY            -
+
+executor >  local (1)
+[]8;;file:///workspaces/Week-6-Nextflow-nf-core/02_Build_with_nf-core/core-hello/work/0e/58bcc0a0fa0588e013586f9955f4aa0e/58bcc0] CORE_HELLO:HELLO:sayHello (2)     | 0 of 3
+[-        ] CORE_HELLO:HELLO:convertToUpper   -
+[-        ] CORE_HELLO:HELLO:FIND_CONCATENATE -
+[-        ] CORE_HELLO:HELLO:COWPY            -
+
+executor >  local (2)
+[]8;;file:///workspaces/Week-6-Nextflow-nf-core/02_Build_with_nf-core/core-hello/work/d3/4f71e30f2b07e258b4cae9e5ee6f43d3/4f71e3] CORE_HELLO:HELLO:sayHello (1)     | 0 of 3
+[-        ] CORE_HELLO:HELLO:convertToUpper   | 0 of 1
+[-        ] CORE_HELLO:HELLO:FIND_CONCATENATE -
+[-        ] CORE_HELLO:HELLO:COWPY            -
+
+executor >  local (3)
+[]8;;file:///workspaces/Week-6-Nextflow-nf-core/02_Build_with_nf-core/core-hello/work/57/79d070d39fe9f84e21d4e636f5f70157/79d070] CORE_HELLO:HELLO:sayHello (3)     | 3 of 3
+[-        ] CORE_HELLO:HELLO:convertToUpper   | 0 of 2
+[-        ] CORE_HELLO:HELLO:FIND_CONCATENATE -
+[-        ] CORE_HELLO:HELLO:COWPY            -
+
+executor >  local (5)
+[]8;;file:///workspaces/Week-6-Nextflow-nf-core/02_Build_with_nf-core/core-hello/work/57/79d070d39fe9f84e21d4e636f5f70157/79d070] CORE_HELLO:HELLO:sayHello (3)       | 3 of 3 ✔
+[]8;;file:///workspaces/Week-6-Nextflow-nf-core/02_Build_with_nf-core/core-hello/work/96/3f217a3e78914884d3000bf2d7714e96/3f217a] CORE_HELLO:HELLO:convertToUpper (2) | 1 of 3
+[-        ] CORE_HELLO:HELLO:FIND_CONCATENATE   -
+[-        ] CORE_HELLO:HELLO:COWPY              -
+
+executor >  local (6)
+[]8;;file:///workspaces/Week-6-Nextflow-nf-core/02_Build_with_nf-core/core-hello/work/57/79d070d39fe9f84e21d4e636f5f70157/79d070] CORE_HELLO:HELLO:sayHello (3)       | 3 of 3 ✔
+[]8;;file:///workspaces/Week-6-Nextflow-nf-core/02_Build_with_nf-core/core-hello/work/f3/c595ae054105222b502b6b2774b16bf3/c595ae] CORE_HELLO:HELLO:convertToUpper (3) | 2 of 3
+[-        ] CORE_HELLO:HELLO:FIND_CONCATENATE   -
+[-        ] CORE_HELLO:HELLO:COWPY              -
+
+executor >  local (6)
+[]8;;file:///workspaces/Week-6-Nextflow-nf-core/02_Build_with_nf-core/core-hello/work/57/79d070d39fe9f84e21d4e636f5f70157/79d070] CORE_HELLO:HELLO:sayHello (3)       | 3 of 3 ✔
+[]8;;file:///workspaces/Week-6-Nextflow-nf-core/02_Build_with_nf-core/core-hello/work/f3/c595ae054105222b502b6b2774b16bf3/c595ae] CORE_HELLO:HELLO:convertToUpper (3) | 3 of 3 ✔
+[-        ] CORE_HELLO:HELLO:FIND_CONCATENATE   | 0 of 1
+[-        ] CORE_HELLO:HELLO:COWPY              -
+
+executor >  local (7)
+[]8;;file:///workspaces/Week-6-Nextflow-nf-core/02_Build_with_nf-core/core-hello/work/57/79d070d39fe9f84e21d4e636f5f70157/79d070] CORE_HELLO:HELLO:sayHello (3)            | 3 of 3 ✔
+[]8;;file:///workspaces/Week-6-Nextflow-nf-core/02_Build_with_nf-core/core-hello/work/f3/c595ae054105222b502b6b2774b16bf3/c595ae] CORE_HELLO:HELLO:convertToUpper (3)      | 3 of 3 ✔
+[]8;;file:///workspaces/Week-6-Nextflow-nf-core/02_Build_with_nf-core/core-hello/work/80/28e2ab74941d37d3b8d4809f09a27180/28e2ab] CORE_HELLO:HELLO:FIND_CONCATENATE (test) | 0 of 1
+[-        ] CORE_HELLO:HELLO:COWPY                   -
+
+executor >  local (7)
+[]8;;file:///workspaces/Week-6-Nextflow-nf-core/02_Build_with_nf-core/core-hello/work/57/79d070d39fe9f84e21d4e636f5f70157/79d070] CORE_HELLO:HELLO:sayHello (3)            | 3 of 3 ✔
+[]8;;file:///workspaces/Week-6-Nextflow-nf-core/02_Build_with_nf-core/core-hello/work/f3/c595ae054105222b502b6b2774b16bf3/c595ae] CORE_HELLO:HELLO:convertToUpper (3)      | 3 of 3 ✔
+[]8;;file:///workspaces/Week-6-Nextflow-nf-core/02_Build_with_nf-core/core-hello/work/80/28e2ab74941d37d3b8d4809f09a27180/28e2ab] CORE_HELLO:HELLO:FIND_CONCATENATE (test) | 1 of 1 ✔
+[-        ] CORE_HELLO:HELLO:COWPY                   -
+
+executor >  local (8)
+[]8;;file:///workspaces/Week-6-Nextflow-nf-core/02_Build_with_nf-core/core-hello/work/57/79d070d39fe9f84e21d4e636f5f70157/79d070] CORE_HELLO:HELLO:sayHello (3)            | 3 of 3 ✔
+[]8;;file:///workspaces/Week-6-Nextflow-nf-core/02_Build_with_nf-core/core-hello/work/f3/c595ae054105222b502b6b2774b16bf3/c595ae] CORE_HELLO:HELLO:convertToUpper (3)      | 3 of 3 ✔
+[]8;;file:///workspaces/Week-6-Nextflow-nf-core/02_Build_with_nf-core/core-hello/work/80/28e2ab74941d37d3b8d4809f09a27180/28e2ab] CORE_HELLO:HELLO:FIND_CONCATENATE (test) | 1 of 1 ✔
+[]8;;file:///workspaces/Week-6-Nextflow-nf-core/02_Build_with_nf-core/core-hello/work/9c/ae22fe55f9687de3bfcf2554fbc8809c/ae22fe] CORE_HELLO:HELLO:COWPY (test)            | 0 of 1
+
+executor >  local (8)
+[]8;;file:///workspaces/Week-6-Nextflow-nf-core/02_Build_with_nf-core/core-hello/work/57/79d070d39fe9f84e21d4e636f5f70157/79d070] CORE_HELLO:HELLO:sayHello (3)            | 3 of 3 ✔
+[]8;;file:///workspaces/Week-6-Nextflow-nf-core/02_Build_with_nf-core/core-hello/work/f3/c595ae054105222b502b6b2774b16bf3/c595ae] CORE_HELLO:HELLO:convertToUpper (3)      | 3 of 3 ✔
+[]8;;file:///workspaces/Week-6-Nextflow-nf-core/02_Build_with_nf-core/core-hello/work/80/28e2ab74941d37d3b8d4809f09a27180/28e2ab] CORE_HELLO:HELLO:FIND_CONCATENATE (test) | 1 of 1 ✔
+[]8;;file:///workspaces/Week-6-Nextflow-nf-core/02_Build_with_nf-core/core-hello/work/9c/ae22fe55f9687de3bfcf2554fbc8809c/ae22fe] CORE_HELLO:HELLO:COWPY (test)            | 1 of 1 ✔
+-[core/hello] Pipeline completed successfully-
+

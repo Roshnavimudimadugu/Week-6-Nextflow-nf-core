@@ -1,0 +1,39 @@
+[33mNextflow 26.04.7 is available - Please consider updating your version to it(B[m
+
+ N E X T F L O W   ~  version 26.04.4
+
+Launching `./main.nf` [astonishing_knuth] revision: d6bbba9521
+
+WARN: Unrecognized config option 'validation.defaultIgnoreParams'
+WARN: Unrecognized config option 'validation.monochromeLogs'
+Input/output options
+  input              : assets/invalid_greetings.csv
+  outdir             : test-results
+
+Generic options
+  trace_report_suffix: 2026-10-11_04-29-09
+
+Core Nextflow options
+  runName            : astonishing_knuth
+  containerEngine    : docker
+  launchDir          : /workspaces/Week-6-Nextflow-nf-core/02_Build_with_nf-core/core-hello
+  workDir            : /workspaces/Week-6-Nextflow-nf-core/02_Build_with_nf-core/core-hello/work
+  projectDir         : /workspaces/Week-6-Nextflow-nf-core/02_Build_with_nf-core/core-hello
+  userName           : root
+  profile            : docker
+  configFiles        : /workspaces/Week-6-Nextflow-nf-core/02_Build_with_nf-core/core-hello/nextflow.config
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+------------------------------------------------------
+ERROR ~ Validation of pipeline parameters failed!
+
+ -- Check '.nextflow.log' file for details
+The following invalid input values have been detected:
+
+* Missing required parameter(s): batch
+* --input (assets/invalid_greetings.csv): Validation of file failed:
+	-> Entry 1: Missing required field(s): greeting
+	-> Entry 2: Missing required field(s): greeting
+	-> Entry 3: Missing required field(s): greeting
+
+ -- Check script 'subworkflows/nf-core/utils_nfschema_plugin/main.nf' at line: 68 or see '.nextflow.log' file for more details

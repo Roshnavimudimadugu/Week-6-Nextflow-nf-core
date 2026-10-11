@@ -1,0 +1,16 @@
+.nextflow*
+work/
+data/
+results/
+.DS_Store
+testing/
+testing*
+*.pyc
+null/
+.lineage/
+
+# Generated local Nextflow execution outputs
+work/
+core-hello-results/
+test-results/
+results/

@@ -1,0 +1,9 @@
+COWPY:
+  cowpy: 1.1.5
+FIND_CONCATENATE:
+  coreutils: 9.4
+  find: 4.6.0
+  pigz: 2.8
+Workflow:
+    core/hello: v1.0.0dev
+    Nextflow: 26.04.4
